@@ -10,12 +10,10 @@ const Map = ({ setCoordinates, setBounds, coordinates }) => {
     const classes = useStyles();
     const isMobile = useMediaQuery('(min-width: 600px)');
 
-    const mapsApi = process.env.REACT_APP_GOOGLE_MAP_API
-
     return (
         <div className={classes.mapContainer}>
             <GoogleMapReact
-                bootstrapURLKeys={{ key: mapsApi }}
+                bootstrapURLKeys={{ key: '' }}
                 defaultCenter={coordinates}
                 center={coordinates}
                 defaultZoom={14}
