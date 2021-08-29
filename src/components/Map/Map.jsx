@@ -16,18 +16,8 @@ const Map = () => {
         <div className={classes.mapContainer}>
             <GoogleMapReact
                 bootstrapURLKeys={{ key: '' }}
-<<<<<<< HEAD
-<<<<<<< HEAD
-                defaultCenter={coordinates}
-                center={coordinates}
-=======
                 defaultCenter={coords}
                 center={coords}
->>>>>>> parent of cfa3bab (Merge pull request #4 from Sean-Char/work-branch)
-=======
-                defaultCenter={coords}
-                center={coords}
->>>>>>> parent of 0b78a62 (consume api)
                 defaultZoom={14}
                 margin={[50, 50, 50, 50]}
                 options={''}
