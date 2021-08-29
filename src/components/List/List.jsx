@@ -5,10 +5,22 @@ import PlaceDetails from '../PlaceDetails/PlaceDetails';
 
 import useStyle from './styles'
 
-const List = ({ places }) => {
+const List = () => {
     const classes = useStyle();
     const [type, setType] = useState('restaurants');
     const [rating, setRating] = useState('');
+
+    const places = [
+        { name: 'Good Beer'}, 
+        { name: 'Nice Place'}, 
+        { name: 'Best Food'}, 
+        { name: 'Good Beer'}, 
+        { name: 'Nice Place'}, 
+        { name: 'Best Food'}, 
+        { name: 'Good Beer'}, 
+        { name: 'Nice Place'}, 
+        { name: 'Best Food'},
+    ];
 
     return (
         <div className={classes.container}>
